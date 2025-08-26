@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>youhuaxieshengzuopin</title>
+<style>
+  .sidebar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif;
+    letter-spacing: 4px;
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #ffff72;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  .sidebar span.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 45px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 25px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif;
+    letter-spacing: 5px;
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #4aff69;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  .sidebar a:hover {
+    background-color:  #f0e68c; 
+    transform: scale(1.05);
+  }
+  .sidebar a:active {
+    background-color:  #c9c070; 
+    transform: scale(1.05);
+  }
+  body {
+    margin: 0;
+    background-color:  #e6f2ff;
+  }
+  .header {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #008000;
+  }
+  .header img {
+    height: 80px;
+    margin-right: 20px;
+  }
+  .container {
+    display: flex;
+    min-height: calc(100vh - 100px);
+  }
+  .sidebar {
+    width: 170px;
+    background-color: #e6f2ff;
+    padding: 10px 0;
+  }
+  .content {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #e6f2ff;
+    font-family: 'SimSun', serif;
+    color:#800000;
+    padding: 20px;
+  }
+  .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      border-color: #666;
+    }
+    .caption {
+      margin-top: 5px;
+      font-size: 14px;
+      justify-content: center; 
+    }
+    .pagination {
+      margin: 20px;
+    }
+    .pagination a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="../img/logo.png" alt="Logo">
+</div>
+
+<div class="container">
+  <div class="sidebar">
+    <a href="../huodongnianbiao.html">活动年表</a>
+    <a href="../suixiang.html">随想</a>
+    <a href="../tanhuihua_1.html">谈绘画</a>
+    <a href="../zaoqizuopin.html">早期作品</a>
+    <a href="../sumiaozuopin.html">素描作品</a>
+    <a href="../lishihua.html">历史画</a>
+    <span class="active">油画写生作品</span>
+    <a href="../chuang_galleries/gallery_page1.html">油画创作作品</a>
+    <a href="../chubanwu_galleries/gallery_page1.html">出版物</a>
+    <a href="../yihuayou/01.html">忆画友</a>
+    <a href="../05youhuazhan_galleries/gallery_page1.html">05油画展</a>
+    <a href="../yishujianying_galleries/gallery_page1.html">艺术剪影</a>
+    <a href="../lianxiwomen.html">联系我们</a>
+  </div>
+
+  <div class="content">
+    <div class="gallery">
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs201.html">
+                <img src="../downloaded_images/xs-201s.jpg" alt="xs201">
+            </a>
+            <div class="caption">xs201</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs202.html">
+                <img src="../downloaded_images/xs-202s.jpg" alt="xs202">
+            </a>
+            <div class="caption">xs202</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs203.html">
+                <img src="../downloaded_images/xs-203s.jpg" alt="xs203">
+            </a>
+            <div class="caption">xs203</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs204.html">
+                <img src="../downloaded_images/xs-204s.jpg" alt="xs204">
+            </a>
+            <div class="caption">xs204</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs205.html">
+                <img src="../downloaded_images/xs-205s.jpg" alt="xs205">
+            </a>
+            <div class="caption">xs205</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs206.html">
+                <img src="../downloaded_images/xs-206s.jpg" alt="xs206">
+            </a>
+            <div class="caption">xs206</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs207.html">
+                <img src="../downloaded_images/xs-207s.jpg" alt="xs207">
+            </a>
+            <div class="caption">xs207</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs208.html">
+                <img src="../downloaded_images/xs-208s.jpg" alt="xs208">
+            </a>
+            <div class="caption">xs208</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs209.html">
+                <img src="../downloaded_images/xs-209s.jpg" alt="xs209">
+            </a>
+            <div class="caption">xs209</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs210.html">
+                <img src="../downloaded_images/xs-210s.jpg" alt="xs210">
+            </a>
+            <div class="caption">xs210</div>
+        </div>
+    </div>
+    <div class="pagination">
+      <a href="gallery_page10.html">上一页</a>
+    </div> 
+  </div>
+</div>
+
+</body>
+</html>

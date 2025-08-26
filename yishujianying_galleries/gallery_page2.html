@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>youhuaxieshengzuopin</title>
+<style>
+  .sidebar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif;
+    letter-spacing: 4px;
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #ffff72;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  .sidebar span.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 45px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 25px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif;
+    letter-spacing: 5px;
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #4aff69;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  .sidebar a:hover {
+    background-color:  #f0e68c; 
+    transform: scale(1.05);
+  }
+  .sidebar a:active {
+    background-color:  #c9c070; 
+    transform: scale(1.05);
+  }
+  body {
+    margin: 0;
+    background-color:  #e6f2ff;
+  }
+  .header {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #008000;
+  }
+  .header img {
+    height: 80px;
+    margin-right: 20px;
+  }
+  .container {
+    display: flex;
+    min-height: calc(100vh - 100px);
+  }
+  .sidebar {
+    width: 170px;
+    background-color: #e6f2ff;
+    padding: 10px 0;
+  }
+  
+  .content {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #e6f2ff;
+    font-family: 'SimSun', serif; /* 使用宋体 */
+    color:#800000; /* 字体颜色 */
+    padding: 20px;
+  }
+
+  .gallery-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+        .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: start; /* 避免图片撑高后乱掉 */
+}
+
+    .gallery-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 让图片和文字分布 */
+    align-items: center;
+    text-align: center;
+    height: 250px;   /* 固定每个格子的高度，保证整齐 */
+    box-sizing: border-box;
+}
+
+    .gallery-item p {
+    text-align: center;
+    margin: 5px;
+    font-size: 16px;
+    color: #800000;
+}
+
+.gallery-item img {
+    max-width: 100%;  /* 确保图片不超出容器宽度 */
+    max-height: 220px;   /* 限制图片高度，保证图片中心对齐 */
+    margin-bottom: 10px;
+    border: 2px solid #838383;      /* 内层边框 */
+    outline: 2px solid #737373;     /* 外层边框 */
+    outline-offset: 2px;            /* 内外边框间距 */
+    object-fit: contain; /* 保持比例缩放，不会被拉伸 */
+}
+
+    .caption {
+    font-size: 14px;
+    color: #800000;
+    height: 40px;        /* 给文字预留固定高度 */
+    display: flex;
+    align-items: center; /* 文字垂直居中 */
+    justify-content: center;
+    }
+    .pagination {
+      margin: 20px;
+       text-align: center; 
+    }
+    .pagination a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="../img/logo.png" alt="Logo">
+</div>
+
+<div class="container">
+  <div class="sidebar">
+    <a href="../huodongnianbiao.html">活动年表</a>
+    <a href="../suixiang.html">随想</a>
+    <a href="../tanhuihua_1.html">谈绘画</a>
+    <a href="../zaoqizuopin.html">早期作品</a>
+    <a href="../sumiaozuopin.html">素描作品</a>
+    <a href="../lishihua.html">历史画</a>
+    <a href="../galleries/gallery_page1.html">油画写生作品</a>
+    <a href="../chuang_galleries/gallery_page1.html">油画创作作品</a>
+    <a href="../chubanwu_galleries/gallery_page1.html">出版物</a>
+    <a href="../yihuayou/01.html">忆画友</a>
+    <a href="../05youhuazhan_galleries/gallery_page1.html">05油画展</a>
+    <span class="active">艺术剪影</span>
+    <a href="../lianxiwomen.html">联系我们</a>
+  </div>
+
+  <div class="content">
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="../yishujianying_downloaded_images/h18.bmp" alt="cb09">
+            <div class="caption">深入生活</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../yishujianying_downloaded_images/h19.bmp" alt="cb10">
+            <div class="caption">佳县白云寺</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../yishujianying_downloaded_images/c01.bmp" alt="cb11">
+            <div class="caption">参观、交流</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../yishujianying_downloaded_images/c02.bmp" alt="cb12">
+            <div class="caption">上素描课</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../yishujianying_downloaded_images/c03.bmp" alt="cb13">
+            <div class="caption">和研究生在一起</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../yishujianying_downloaded_images/c06.bmp" alt="cb14">
+            <div class="caption">在新加坡办个展</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../yishujianying_downloaded_images/c10.bmp" alt="cb15">
+            <div class="caption">在新加坡写生</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../yishujianying_downloaded_images/c11.bmp" alt="cb16">
+            <div class="caption">户外写生</div>
+        </div>
+    </div>
+    <div class="pagination">
+      <a href="gallery_page1.html">上一页</a>
+      <a href="gallery_page3.html">下一页</a>
+    </div> 
+  </div>
+</div>
+
+</body>
+</html>

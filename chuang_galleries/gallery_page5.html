@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>youhuaxieshengzuopin</title>
+<style>
+  .sidebar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif;
+    letter-spacing: 4px;
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #ffff72;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  .sidebar span.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 45px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 25px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif;
+    letter-spacing: 5px;
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #4aff69;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  .sidebar a:hover {
+    background-color:  #f0e68c; 
+    transform: scale(1.05);
+  }
+  .sidebar a:active {
+    background-color:  #c9c070; 
+    transform: scale(1.05);
+  }
+  body {
+    margin: 0;
+    background-color:  #e6f2ff;
+  }
+  .header {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #008000;
+  }
+  .header img {
+    height: 80px;
+    margin-right: 20px;
+  }
+  .container {
+    display: flex;
+    min-height: calc(100vh - 100px);
+  }
+  .sidebar {
+    width: 170px;
+    background-color: #e6f2ff;
+    padding: 10px 0;
+  }
+  .content {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #e6f2ff;
+    font-family: 'SimSun', serif;
+    color:#800000;
+    padding: 20px;
+  }
+  .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      border-color: #666;
+    }
+    .caption {
+      margin-top: 5px;
+      font-size: 14px;
+      justify-content: center; 
+    }
+    .pagination {
+      margin: 20px;
+    }
+    .pagination a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="../img/logo.png" alt="Logo">
+</div>
+
+<div class="container">
+  <div class="sidebar">
+    <a href="../huodongnianbiao.html">活动年表</a>
+    <a href="../suixiang.html">随想</a>
+    <a href="../tanhuihua_1.html">谈绘画</a>
+    <a href="../zaoqizuopin.html">早期作品</a>
+    <a href="../sumiaozuopin.html">素描作品</a>
+    <a href="../lishihua.html">历史画</a>
+    <a href="../galleries/gallery_page1.html">油画写生作品</a>
+    <span class="active">油画创作作品</span>
+    <a href="../chubanwu_galleries/gallery_page1.html">出版物</a>
+    <a href="../yihuayou/01.html">忆画友</a>
+    <a href="../05youhuazhan_galleries/gallery_page1.html">05油画展</a>
+    <a href="../yishujianying_galleries/gallery_page1.html">艺术剪影</a>
+    <a href="../lianxiwomen.html">联系我们</a>
+  </div>
+
+  <div class="content">
+    <div class="gallery">
+
+        <div>
+            <a href="../chuang_detail/detail_cz081.html">
+                <img src="../chuang_downloaded_images/z081-s.jpg" alt="cz081">
+            </a>
+            <div class="caption">cz081</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz082.html">
+                <img src="../chuang_downloaded_images/z082-s.jpg" alt="cz082">
+            </a>
+            <div class="caption">cz082</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz083.html">
+                <img src="../chuang_downloaded_images/z083-s.jpg" alt="cz083">
+            </a>
+            <div class="caption">cz083</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz084.html">
+                <img src="../chuang_downloaded_images/z084-s.jpg" alt="cz084">
+            </a>
+            <div class="caption">cz084</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz085.html">
+                <img src="../chuang_downloaded_images/z085-s.jpg" alt="cz085">
+            </a>
+            <div class="caption">cz085</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz086.html">
+                <img src="../chuang_downloaded_images/z086-s.jpg" alt="cz086">
+            </a>
+            <div class="caption">cz086</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz087.html">
+                <img src="../chuang_downloaded_images/z087-s.jpg" alt="cz087">
+            </a>
+            <div class="caption">cz087</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz088.html">
+                <img src="../chuang_downloaded_images/z088-s.jpg" alt="cz088">
+            </a>
+            <div class="caption">cz088</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz089.html">
+                <img src="../chuang_downloaded_images/z089-s.jpg" alt="cz089">
+            </a>
+            <div class="caption">cz089</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz090.html">
+                <img src="../chuang_downloaded_images/z090-s.jpg" alt="cz090">
+            </a>
+            <div class="caption">cz090</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz091.html">
+                <img src="../chuang_downloaded_images/z091-s.jpg" alt="cz091">
+            </a>
+            <div class="caption">cz091</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz092.html">
+                <img src="../chuang_downloaded_images/z092-s.jpg" alt="cz092">
+            </a>
+            <div class="caption">cz092</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz093.html">
+                <img src="../chuang_downloaded_images/z093-s.jpg" alt="cz093">
+            </a>
+            <div class="caption">cz093</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz094.html">
+                <img src="../chuang_downloaded_images/z094-s.jpg" alt="cz094">
+            </a>
+            <div class="caption">cz094</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz095.html">
+                <img src="../chuang_downloaded_images/z095-s.jpg" alt="cz095">
+            </a>
+            <div class="caption">cz095</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz096.html">
+                <img src="../chuang_downloaded_images/z096-s.jpg" alt="cz096">
+            </a>
+            <div class="caption">cz096</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz097.html">
+                <img src="../chuang_downloaded_images/z097-s.jpg" alt="cz097">
+            </a>
+            <div class="caption">cz097</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz098.html">
+                <img src="../chuang_downloaded_images/z098-s.jpg" alt="cz098">
+            </a>
+            <div class="caption">cz098</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz099.html">
+                <img src="../chuang_downloaded_images/z099-s.jpg" alt="cz099">
+            </a>
+            <div class="caption">cz099</div>
+        </div>
+
+        <div>
+            <a href="../chuang_detail/detail_cz100.html">
+                <img src="../chuang_downloaded_images/z100-s.jpg" alt="cz100">
+            </a>
+            <div class="caption">cz100</div>
+        </div>
+    </div>
+    <div class="pagination">
+      <a href="gallery_page4.html">上一页</a>
+      <a href="gallery_page6.html">下一页</a>
+    </div> 
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+body.cover {
+  margin: 0;
+  min-height: 100vh;
+  background: url("../img/cover.png") no-repeat center top/contain;
+  background-color: white; /* 或者白色，填充空余部分 */
+}
+
+
+.enter-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #ff9800;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.enter-button:hover {
+  background: #e68900;
+}

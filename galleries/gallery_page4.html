@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>youhuaxieshengzuopin</title>
+<style>
+  .sidebar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif;
+    letter-spacing: 4px;
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #ffff72;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  .sidebar span.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 45px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 25px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif;
+    letter-spacing: 5px;
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #4aff69;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+  .sidebar a:hover {
+    background-color:  #f0e68c; 
+    transform: scale(1.05);
+  }
+  .sidebar a:active {
+    background-color:  #c9c070; 
+    transform: scale(1.05);
+  }
+  body {
+    margin: 0;
+    background-color:  #e6f2ff;
+  }
+  .header {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #008000;
+  }
+  .header img {
+    height: 80px;
+    margin-right: 20px;
+  }
+  .container {
+    display: flex;
+    min-height: calc(100vh - 100px);
+  }
+  .sidebar {
+    width: 170px;
+    background-color: #e6f2ff;
+    padding: 10px 0;
+  }
+  .content {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #e6f2ff;
+    font-family: 'SimSun', serif;
+    color:#800000;
+    padding: 20px;
+  }
+  .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      border-color: #666;
+    }
+    .caption {
+      margin-top: 5px;
+      font-size: 14px;
+      justify-content: center; 
+    }
+    .pagination {
+      margin: 20px;
+    }
+    .pagination a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="../img/logo.png" alt="Logo">
+</div>
+
+<div class="container">
+  <div class="sidebar">
+    <a href="../huodongnianbiao.html">活动年表</a>
+    <a href="../suixiang.html">随想</a>
+    <a href="../tanhuihua_1.html">谈绘画</a>
+    <a href="../zaoqizuopin.html">早期作品</a>
+    <a href="../sumiaozuopin.html">素描作品</a>
+    <a href="../lishihua.html">历史画</a>
+    <span class="active">油画写生作品</span>
+    <a href="../chuang_galleries/gallery_page1.html">油画创作作品</a>
+    <a href="../chubanwu_galleries/gallery_page1.html">出版物</a>
+    <a href="../yihuayou/01.html">忆画友</a>
+    <a href="../05youhuazhan_galleries/gallery_page1.html">05油画展</a>
+    <a href="../yishujianying_galleries/gallery_page1.html">艺术剪影</a>
+    <a href="../lianxiwomen.html">联系我们</a>
+  </div>
+
+  <div class="content">
+    <div class="gallery">
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs061.html">
+                <img src="../downloaded_images/xs-061s.jpg" alt="xs061">
+            </a>
+            <div class="caption">xs061</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs062.html">
+                <img src="../downloaded_images/xs-062s.jpg" alt="xs062">
+            </a>
+            <div class="caption">xs062</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs063.html">
+                <img src="../downloaded_images/xs-063s.jpg" alt="xs063">
+            </a>
+            <div class="caption">xs063</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs064.html">
+                <img src="../downloaded_images/xs-064s.jpg" alt="xs064">
+            </a>
+            <div class="caption">xs064</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs065.html">
+                <img src="../downloaded_images/xs-065s.jpg" alt="xs065">
+            </a>
+            <div class="caption">xs065</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs066.html">
+                <img src="../downloaded_images/xs-066s.jpg" alt="xs066">
+            </a>
+            <div class="caption">xs066</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs067.html">
+                <img src="../downloaded_images/xs-067s.jpg" alt="xs067">
+            </a>
+            <div class="caption">xs067</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs068.html">
+                <img src="../downloaded_images/xs-068s.jpg" alt="xs068">
+            </a>
+            <div class="caption">xs068</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs069.html">
+                <img src="../downloaded_images/xs-069s.jpg" alt="xs069">
+            </a>
+            <div class="caption">xs069</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs070.html">
+                <img src="../downloaded_images/xs-070s.jpg" alt="xs070">
+            </a>
+            <div class="caption">xs070</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs071.html">
+                <img src="../downloaded_images/xs-071s.jpg" alt="xs071">
+            </a>
+            <div class="caption">xs071</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs072.html">
+                <img src="../downloaded_images/xs-072s.jpg" alt="xs072">
+            </a>
+            <div class="caption">xs072</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs073.html">
+                <img src="../downloaded_images/xs-073s.jpg" alt="xs073">
+            </a>
+            <div class="caption">xs073</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs074.html">
+                <img src="../downloaded_images/xs-074s.jpg" alt="xs074">
+            </a>
+            <div class="caption">xs074</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs075.html">
+                <img src="../downloaded_images/xs-075s.jpg" alt="xs075">
+            </a>
+            <div class="caption">xs075</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs076.html">
+                <img src="../downloaded_images/xs-076s.jpg" alt="xs076">
+            </a>
+            <div class="caption">xs076</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs077.html">
+                <img src="../downloaded_images/xs-077s.jpg" alt="xs077">
+            </a>
+            <div class="caption">xs077</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs078.html">
+                <img src="../downloaded_images/xs-078s.jpg" alt="xs078">
+            </a>
+            <div class="caption">xs078</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs079.html">
+                <img src="../downloaded_images/xs-079s.jpg" alt="xs079">
+            </a>
+            <div class="caption">xs079</div>
+        </div>
+
+        <div>
+            <a href="../youhuaxieshengzuopin_detail/detail_xs080.html">
+                <img src="../downloaded_images/xs-080s.jpg" alt="xs080">
+            </a>
+            <div class="caption">xs080</div>
+        </div>
+    </div>
+    <div class="pagination">
+      <a href="gallery_page3.html">上一页</a>
+      <a href="gallery_page5.html">下一页</a>
+    </div> 
+  </div>
+</div>
+
+</body>
+</html>

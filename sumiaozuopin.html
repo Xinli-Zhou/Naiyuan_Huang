@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>随想</title>
+<style>
+  .sidebar a {
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;      /* 垂直居中 */
+    width: 150px;
+    height: 30px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif; /* 楷体字体 */
+    letter-spacing: 4px;       /* 调整字间距，可以改大或改小 */
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #ffff72; /* 默认黄 */
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+
+  .sidebar span.active {
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;      /* 垂直居中 */
+    width: 190px;
+    height: 45px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 25px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif; /* 楷体字体 */
+    letter-spacing: 5px;       /* 调整字间距，可以改大或改小 */
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #4aff69; /* 默认黄 */
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+
+
+  /* 鼠标悬停 */
+  .sidebar a:hover {
+    background-color:  #f0e68c; 
+    transform: scale(1.05); /* 放大效果 */
+  }
+  .sidebar a:active {
+    background-color:  #c9c070; 
+    transform: scale(1.05); /* 放大效果 */
+  }
+
+  body {
+    margin: 0;
+    background-color:  #e6f2ff;
+  }
+  .header {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #008000;
+  }
+  .header img {
+    height: 80px;
+    margin-right: 20px;
+  }
+  .container {
+    display: flex;
+    min-height: calc(100vh - 100px);
+  }
+  .sidebar {
+    width: 170px;
+    background-color: #e6f2ff;
+    padding: 10px 0;
+  }
+
+  .content {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #e6f2ff;
+    font-family: 'SimSun', serif; /* 使用宋体 */
+    color:#800000; /* 字体颜色 */
+    padding: 20px;
+  }
+
+  .gallery-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+    .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+}
+
+    .gallery-item {
+    display: flex;
+    height: 280px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.gallery-item img {
+    max-width: 100%;  /* 确保图片不超出容器宽度 */
+    height: 220px;     /* 高度自适应，保持原始比例 */
+    margin-bottom: 10px;
+    border: 2px solid #838383;      /* 内层边框 */
+    outline: 2px solid #737373;     /* 外层边框 */
+    outline-offset: 2px;            /* 内外边框间距 */
+}
+
+
+
+
+
+  
+</style>
+<script>
+  function FP_swapImg(id, url) {
+    document.getElementById(id).src = url;
+  }
+</script>
+</head>
+<body>
+
+<div class="header">
+  <img src="img/logo.png" alt="Logo">
+</div>
+
+<div class="container">
+  <div class="sidebar">
+    <a href="huodongnianbiao.html">活动年表</a>
+    <a href="suixiang.html">随想</a>
+    <a href="tanhuihua_1.html">谈绘画</a>
+    <a href="zaoqizuopin.html">早期作品</a>
+    <span class="active">素描作品</span>
+    <a href="lishihua.html">历史画</a>
+    <a href="galleries/gallery_page1.html">油画写生作品</a>
+    <a href="chuang_galleries/gallery_page1.html">油画创作作品</a>
+    <a href="chubanwu_galleries/gallery_page1.html">出版物</a>
+    <a href="yihuayou/01.html">忆画友</a>
+    <a href="05youhuazhan_galleries/gallery_page1.html">05油画展</a>
+    <a href="yishujianying_galleries/gallery_page1.html">艺术剪影</a>
+    <a href="lianxiwomen.html">联系我们</a>
+  </div>
+
+  <div class="content">
+
+    <p style="font-size: 20px; font-weight: bolder;">部分素描作品</p>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="img/a1-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/a3-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/a4-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/a5-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/a6-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/a8-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/a9-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/a10-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/a11-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/a12-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/P1-s.jpg">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/P2-s.jpg">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/nt-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/nt2-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/nt3-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/nr-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/sm4-s.jpg">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/sm5-s.jpg">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/sm10-s.jpg">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/sg-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/sg1-s.gif">
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/sg2-s.gif">
+        </div>
+
+    </div>
+   
+  </div>
+</div>
+
+</body>
+</html>

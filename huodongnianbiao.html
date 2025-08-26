@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>随想</title>
+<style>
+  .sidebar a {
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;      /* 垂直居中 */
+    width: 150px;
+    height: 30px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif; /* 楷体字体 */
+    letter-spacing: 4px;       /* 调整字间距，可以改大或改小 */
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #ffff72; /* 默认黄 */
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+
+  .sidebar span.active {
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;      /* 垂直居中 */
+    width: 190px;
+    height: 45px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 25px; 
+    font-weight: bold;
+    font-family: "楷体", "KaiTi", serif; /* 楷体字体 */
+    letter-spacing: 5px;       /* 调整字间距，可以改大或改小 */
+    color: rgb(17, 1, 240);
+    text-decoration: none;
+    background-color: #4aff69; /* 默认黄 */
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+
+
+  /* 鼠标悬停 */
+  .sidebar a:hover {
+    background-color:  #f0e68c; 
+    transform: scale(1.05); /* 放大效果 */
+  }
+  .sidebar a:active {
+    background-color:  #c9c070; 
+    transform: scale(1.05); /* 放大效果 */
+  }
+
+  body {
+    margin: 0;
+    background-color:  #e6f2ff;
+  }
+  .header {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 3px solid #008000;
+  }
+
+
+  .header img {
+    height: 80px;
+    margin-right: 20px;
+  }
+  .container {
+    display: flex;
+    min-height: calc(100vh - 100px);
+  }
+  .sidebar {
+    width: 170px;
+    background-color: #e6f2ff;
+    padding: 10px 0;
+  }
+
+  .year-event-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #e6f2ff;
+        padding: 20px;
+    }
+
+  .title {
+        text-align: center;
+        font-size: 24px;
+        color: #FF0000;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .subtitle {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #800000;
+        margin-bottom: 20px;
+    }
+    .year {
+        font-weight: bold;
+        color: #800000;
+        width: 20%;
+        text-align: right;
+        padding-right: 20px;
+        margin-bottom: 10px;
+    }
+    .event {
+        margin-bottom: 10px;
+        width: 65%;
+        color: #800000;
+        line-height: 1.6;
+    }
+
+
+  
+</style>
+<script>
+  function FP_swapImg(id, url) {
+    document.getElementById(id).src = url;
+  }
+</script>
+</head>
+<body>
+
+<div class="header">
+  <img src="img/logo.png" alt="Logo">
+</div>
+
+<div class="container">
+  <div class="sidebar">
+    <span class="active">活动年表</span>
+    <a href="suixiang.html">随想</a>
+    <a href="tanhuihua_1.html">谈绘画</a>
+    <a href="zaoqizuopin.html">早期作品</a>
+    <a href="sumiaozuopin.html">素描作品</a>
+    <a href="lishihua.html">历史画</a>
+    <a href="galleries/gallery_page1.html">油画写生作品</a>
+    <a href="chuang_galleries/gallery_page1.html">油画创作作品</a>
+    <a href="chubanwu_galleries/gallery_page1.html">出版物</a>
+    <a href="yihuayou/01.html">忆画友</a>
+    <a href="05youhuazhan_galleries/gallery_page1.html">05油画展</a>
+    <a href="yishujianying_galleries/gallery_page1.html">艺术剪影</a>
+    <a href="lianxiwomen.html">联系我们</a>
+  </div>
+
+  <div class="content">
+    <p class="title">艺术活动年表</p>
+    <p class="subtitle">黄乃源，原西安美术学院教授，中国美术家协会会员，陕西美术家协会理事，陕西油画学会副会长。</p>
+    
+    <div class="year-event-container">
+        <div class="year">1931年</div>
+        <div class="event">
+            11月1日生于江西省萍乡市。
+        </div>
+
+        <div class="year">1949年</div>
+        <div class="event">
+            西北军政大学学习。
+        </div>
+
+        <div class="year">1953年</div>
+        <div class="event">
+            西北艺术学院（西安美院前身）毕业，留校执教40年。其中1953年-1972年8月在美院附中任素描、色彩课教学，并长期担任班主任工作；1972年9月-1993年8月在美院油画系任素描、色彩、创作课教学，曾任油画系教研室主任；1982年-1993年授予硕士研究生导师，指导教学。离休后曾在美院高研班讲评素描作品，进行人物油画教学。他在教学中坚持研究和实践结合的教学方式，画了大量的素描、油画示范作品，并编写了素描、油画教学资料。
+        </div>
+
+        <div class="year">1950年</div>
+        <div class="event">
+            至1966年从事年画、宣传画、版画创作。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            其代表作品有《蒙族人民欢迎解放军》、《一年比一年更好》、《我娃上学》、《书摊》、《巡道工》、《乡村医院》、《夏收》、《修理农具准备春耕》、《知心话》等，参加全国美术作品大展并发表，版画作品《巡道工》被中国美术馆收藏，北京人民美术出版社出版。
+        </div>
+
+        <div class="year">1969年</div>
+        <div class="event">
+            至1975年借调在陕西省美术创作组。创作毛主席在陕北十三年为题材的中国革命历史油画作品。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            (1969年-1972年8月在在延安纪念馆，1972年-1975年在陕西省文化局。）
+        </div>
+
+        <div class="year">1969年</div>
+        <div class="event">
+            至1971年在延安纪念馆查资料、访问，到吴旗、志丹等地深入生活，收集素材，构思、构图。
+        </div>
+
+        <div class="year">1972年</div>
+        <div class="event">
+            创作油画《中央红军到陕北》，被延安纪念馆陈列收藏，《延安画刊》发表。
+        </div>
+
+        <div class="year">1975年</div>
+        <div class="event">
+            创作年画《亲切的教导》（与王来信、方鄂秦合作）参加全国年画美术作品展，人民美术出版社出版单幅画，编入《全国年画选集》，并在《中国报道》（英文版）、《中国文学》（英文版）、《武汉文艺》、《群众艺术》等杂志发表。
+        </div>
+
+        <div class="year">1976年</div>
+        <div class="event">
+            宣传画《农业的根本出路在于机械化》发表在《陕西青年》。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            年画《育苗》（与李超合作）、《延安画刊》发表，陕西美术出版社出版单幅画。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            创作油画《你办事我放心》（与谌北新、刘文西、秦天健合作），陕西人民出版社和上海人民出版社出版单幅画。
+        </div>
+
+        <div class="year">1977年</div>
+        <div class="event">
+            1-2月出外到遵义、湛江、萍乡煤矿等地体验生活与实地油画写生。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            年画《列车新风》，陕西人民出版社出版单幅画。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            创作油画《世世代代不忘毛主席的恩情》（与谌北新合作），参加全国美展。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            创作油画《我们的斗争需要马列主义》（与谌北新合作），参加全国美术作品展览，北京人民美术出版社出版单幅画，并在《解放军画报》发表，1978年选入陕西人民美术出版社出版的画册及单幅画。
+        </div>
+
+        <div class="year">1978年</div>
+        <div class="event">
+            7-8月出外到玛曲、夏河、若尔盖、马尔康、成都等地深入生活、油画写生。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            创作油画《和西藏人民在一起》（与谌北新、刘文西合作），选入天津人民美术出版社出版的《华主席和我们在一起》画册单页、河南人民出版社出版的《伟大的时代光辉的形象》画册单页，陕西人民出版社出版单幅画。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            写生油画《铁路工人》，河南人民出版社选入《工农兵人物写生2》画册。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            创作油画《陕北人民迎救星》（与谌北新合作），被北京中国人民革命军事博物馆陈列收藏，2002年入选《中国人民革命军事博物馆油画藏品选集》。
+        </div>
+
+        <div class="year">1979年</div>
+        <div class="event">
+            8月出外到青岛、石岛、北京等地油画写生。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            陕西人民出版社出版《黄乃源油画风景习作选》。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            参加全国高等艺术院校素描座谈会（浙江美院）。
+        </div>
+
+        <div class="year">1980年</div>
+        <div class="event">
+            9月到安康、紫阳等收集创作素材，油画写生。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            《矿工》、《海军战士》、《少先队员》编入陕西美术出版社《油画人物画册》。
+        </div>
+
+        <div class="year">1981年</div>
+        <div class="event">
+            油画写生《巨轮》、《萍矿洗煤厂》由陕西人民美术出版社出版，中国美术馆收藏。
+        </div>
+
+        <div class="year">1982年</div>
+        <div class="event">
+            9-10月出外到略阳、广元等地体验生活，油画写生。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            参加全国高等艺术院校创作座谈会（四川重庆）。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            油画写生作品《山村》、《海边》发表在天津《画廊》第九期。
+        </div>
+
+        <div class="year">1983年</div>
+        <div class="event">
+            油画《藏族女教师》，参加全国美展并获优秀作品奖。
+        </div>
+
+        <div class="year">1984年</div>
+        <div class="event">
+            出外到陕北榆林、佳县、义合、吴堡、黄河壶口等地深入生活、收集素材、油画写生。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            油画《斯诺在陕北》，参加庆祝建国35周年陕西省美术作品展览并获三等奖。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            油画《岁月》在陕西省美展上展出。
+        </div>
+
+        <div class="year">1985年</div>
+        <div class="event">
+            油画《陕北村镇》入选西安美术学院美术作品展，并赴日本展览。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            设计并制作了西安火车站大幅壁画《延安金秋》（与苗重安合作）、《雁塔晨钟》。
+        </div>
+
+        <div class="year">1986年</div>
+        <div class="event">
+            8月到乌鲁木齐、吐鲁番、敦煌等地深入生活、收集素材、油画写生。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            湖南美术出版社《中国高等美术院校素描集》选入人体素描2幅。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            湖南美术出版社《中国高等美术院校油画集》选入油画作品1幅。
+        </div>
+
+        <div class="year">1987年</div>
+        <div class="event">
+            初冬到榆林、靖边、宁夏等地体验生活、收集创作素材。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            陕西电视台专题《油画风景欣赏》介绍作品20余幅。
+        </div>
+
+        <div class="year"></div>
+        <div class="event">
+            为唐代艺术博物馆设计创作壁画《唐歌舞》。
+        </div>
+
+        <div class="year">1988年</div>
+        <div class="event">
+            为唐代艺术博物馆创作设计大型壁画《唐节日风俗图》（与孙振廷合作）。
+        </div>
+
+        <div class="year">1989年</div>
+        <div class="event">
+            7月到兰州、塔尔寺、桑科草原、西宁等地体验生活、实地写生。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            陕西美术出版社《素描艺术》选入素描作品9幅。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            《律师》杂志发表油画作品7幅。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            创作油画《脚印》荣获庆祝建国四十周年陕西省美术作品展览三等奖，全国七届美展展出。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            日本仲村哲先生收藏油画写生作品7幅。
+        </div>
+
+        <div class="year">1990年</div>
+        <div class="event">
+            12月在新加坡联展，参展作品10幅。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            新加坡企业家陶先生收藏《脚印》等多幅油画。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            油画《古墓》发表于《美术》第九期。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            摄影作品《桑科草原》获碑林区美术、摄影、书法佳作展览荣誉奖。
+        </div>
+
+        <div class="year">1991年</div>
+        <div class="event">
+            8月新加坡举办个人画展，展出作品60幅，并被全部收藏。（英国剑桥大学图书馆收藏有《吕先生夫妇肖像》油画两幅；新加坡陈嘉庚基金会收藏有西部民俗风景画五幅；新加坡龙语文艺中心收藏西部风景油画、肖像十余幅……）
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            油画《西去列车》入选毛泽东《在延安文艺座谈会上的讲话》发表五十周年陕西省美术作品展。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            油画《草原之歌》入选陕西省庆祝中国共产党成立七十周年美术作品展览。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            《论素描教学》在《艺术界》发表。
+        </div>
+
+        <div class="year">1992年</div>
+        <div class="event">
+            9月到宝鸡、天水等地体验生活、油画写生。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            油画《小站》、《长城内外》入选西安美术学院赴京展览。
+        </div>
+
+        <div class="year">1994年</div>
+        <div class="event">
+            6月到南泥湾、黄河壶口等地深入生活、油画写生。
+        </div>
+
+        <div class="year">1995年</div>
+        <div class="event">
+            8月到天山北疆等地深入生活、收集素材。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            《西北美术》发表油画作品7幅。
+        </div>
+
+        <div class="year">1996年</div>
+        <div class="event">
+            天津人民美术出版社出版了《黄乃源油画作品选》。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            油画《黄河壶口》，编入《海峡两岸中国当代名家油画百人大展》画册。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            风景油画（春、夏、秋、冬）入选首届陕西油画学会展。
+        </div>
+
+        <div class="year">1997年</div>
+        <div class="event">
+            7月在香港国际美术画廊举办《黄乃源油画作品展》，展出作品50幅。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            风景油画在新亚欧大陆桥美术作品汇展获佳作奖，并在全国各地以及赴荷兰展出。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            油画《陕北沙柳》编入广西美术出版社大型画册《中国风景油画》。
+        </div>
+
+        <div class="year">1998年</div>
+        <div class="event">
+            油画《夕照》、《黄河壶口》、《南泥湾》参加当代陕西油画风景山水画邀请展。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            陕西省电视台专题介绍黄乃源油画作品。
+        </div>
+
+        <div class="year">1999年</div>
+        <div class="event">
+            油画《烛之光》入选陕西省庆祝建国五十周年美术作品展。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            创作油画《树影》选入陕西人民美术出版社出版的《西安美术学院美术作品集》。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            校庆50周年离退教授美术作品联展，入展作品15幅。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            油画《帐篷》、《人体》入选《萍乡美术五十年》画册中。
+        </div>
+
+        <div class="year">2000年</div>
+        <div class="event">
+            5-6月到苏州、周庄古镇、柯桥、绍兴、沈家门、普陀山等地体验生活，收集创作素材。
+        </div>
+
+        <div class="year">2001年</div>
+        <div class="event">
+            油画《阳光下》获陕西高等院校庆祝建党80周年师生书画展特等奖。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            风景油画《水乡》入选研究与超越---中国小幅油画作品大展并收入画集中。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            油画《小骑手》、《集市》、《水乡》、《陕北人家》参加“西部．西部”画展。
+        </div>
+
+        <div class="year">2002年</div>
+        <div class="event">
+            油画《骏马》入选毛泽东《在延安文艺座谈会上的讲话》发表六十周年全国美术作品展览。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            油画《陕北初冬》入选陕西人民美术出版社出版的《陕西书画名家作品集》。
+        </div>
+
+        <div class="year">2003年</div>
+        <div class="event">
+            油画《高原十月》，陕西第三届油画展获优秀作品奖。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            陕西电视台专题介绍黄乃源油画作品。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            油画《忆故乡》、《北国之春》入选陕西第三届油画展。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            油画《故乡》参加西安美院赴巴黎作品展。
+        </div>
+
+        <div class="year">2004年</div>
+        <div class="event">
+            《艺术界》第一期上发表论文《色彩魅力的探索谌北新的风景油画写生》。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            4月初召集离退休油画教师研讨俄罗斯画展作品。
+        </div>
+        <div class="year"></div>
+        <div class="event">
+            7月22日因病不幸逝世。
+        </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
